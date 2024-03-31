@@ -1,10 +1,16 @@
 import './css/App.css'
 import Home from "./pages/Home.jsx";
+import {NavLink, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
         <>
-            <Home/>
+            <NavLink to="">Accueil</NavLink>
+            <main>
+                <Routes>
+                    <Route path="" element={<Home/>}/>
+                </Routes>
+            </main>
         </>
     )
 }
