@@ -5,7 +5,11 @@ import {NavLink, Route, Routes} from "react-router-dom";
 function App() {
     return (
         <>
-            <NavLink to="">Accueil</NavLink>
+            <header>
+                <nav>
+                    <NavLink to="">Accueil</NavLink>
+                </nav>
+            </header>
             <main>
                 <Routes>
                     <Route path="" element={<Home/>}/>
