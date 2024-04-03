@@ -13,8 +13,35 @@ nav a:hover {
   color: white;
 }
 
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
 .active {
   border: 1px solid white;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  height: 200px;
+  background-color: purple;
+}
+footer h2 {
+  text-decoration: underline;
+}
+footer svg {
+  transform: translateY(50%);
+}
+footer a:hover {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=App.css.map */

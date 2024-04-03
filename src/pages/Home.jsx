@@ -2,22 +2,10 @@ import React from 'react';
 import "../css/Home.css"
 
 const Home = () => {
+    document.title = "Accueil | Jardin pédagogique"
     return (
         <div>
             <h1>Page d'accueil</h1>
-            <section className="grid">
-                <div className="test">
-                    Essai
-                </div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-                <div className="test"></div>
-            </section>
         </div>
     );
 };
