@@ -6,6 +6,7 @@ function App() {
     return (
         <>
             <header>
+                <h1>Jardin citoyen</h1>
                 <nav>
                     <NavLink to="">Accueil</NavLink>
                 </nav>

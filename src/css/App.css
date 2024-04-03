@@ -1,6 +1,20 @@
 nav {
   display: flex;
   justify-content: center;
+  background: linear-gradient(to bottom, purple, pink);
+}
+nav a {
+  margin: 3px;
+  padding: 3px;
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.active {
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=App.css.map */
