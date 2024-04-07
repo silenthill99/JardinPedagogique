@@ -2,6 +2,7 @@ import './css/App.css'
 import Home from "./pages/Home.jsx";
 import {NavLink, Route, Routes} from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
+import { SiInternetexplorer } from "react-icons/si";
 import Portfolio from "./pages/Portfolio.jsx";
 
 function App() {
@@ -27,7 +28,10 @@ function App() {
             <footer>
                 <h2>Nous contacter</h2>
                 <a href="https://www.facebook.com/E2CNievre" target={"_blank"}>
-                    <FaFacebook color={"white"} size={50}/>
+                    <FaFacebook size={50}/>
+                </a>
+                <a href="https://e2cnievre.fr" target={"_blank"}>
+                    <SiInternetexplorer size={50}/>
                 </a>
             </footer>
         </>

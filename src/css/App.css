@@ -39,6 +39,7 @@ footer h2 {
 }
 footer svg {
   transform: translateY(50%);
+  color: white;
 }
 footer a:hover {
   opacity: 0.5;
