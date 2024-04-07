@@ -1,9 +1,9 @@
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 15px;
-  margin: 0 15px;
+  margin: 0 10% 10%;
 }
 .portfolio img {
   width: 100%;
