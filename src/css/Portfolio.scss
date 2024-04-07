@@ -4,6 +4,8 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 15px;
   margin: 0 10% 10%;
+  border-radius: 10px;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -12,7 +14,9 @@
   }
   a {
     position: relative;
+    transition: 300ms;
     &:hover {
+      transform: scale(1.1);
       div {
         display: flex;
       }
