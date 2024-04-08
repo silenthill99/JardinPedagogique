@@ -8,8 +8,11 @@ const Portfolio = () => {
             <h1 style={{
                 textAlign:"center"
             }}>Portfolio</h1>
+            <h2 style={{
+                textAlign:"center"
+            }}>Conférence au tribunal</h2>
             <div className="portfolio">
-                {imageLink.map((image) => (
+                {Conference.map((image) => (
                     <a key={image.id} href={image.link} target={"_blank"}>
                         <img src={image.link} alt={image.alt}/>
                         <div>
@@ -18,11 +21,22 @@ const Portfolio = () => {
                     </a>
                 ))}
             </div>
+            <h2 style={{
+                textAlign:"center"
+            }}>Lieu</h2>
+            <div className="portfolio">
+                {Lieu.map((image) => (
+                    <a key={image.id} href={image.link} target={"_blank"}>
+                        <img src={image.link} alt={image.alt}/>
+                        <div>Voir la photo</div>
+                    </a>
+                ))}
+            </div>
         </div>
     );
 };
 
-const imageLink = [
+const Conference = [
     {
         link: "1 - 23 mars  - 3e Forum Citoyen Responsabilité écologique.png",
         alt: "Affiche",
@@ -52,12 +66,13 @@ const imageLink = [
         link: "6 - 420478381_1376080606561978_873995250332830573_n.jpg",
         alt: "Atelier 3",
         id: 6
-    },
-    {
-        link: "7 - IMG_20240328_155410.jpg",
-        alt: "Cabanon",
-        id: 7
     }
 ]
+
+const Lieu = [{
+    link: "7 - IMG_20240328_155410.jpg",
+    alt: "Cabanon",
+    id: 7
+}]
 
 export default Portfolio;

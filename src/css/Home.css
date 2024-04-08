@@ -10,4 +10,11 @@
   border: 1px solid black;
 }
 
+.contexte {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
 /*# sourceMappingURL=Home.css.map */
