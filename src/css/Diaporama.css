@@ -9,6 +9,7 @@
   transform: translateY(-50%);
   color: white;
   font-size: 3em;
+  cursor: pointer;
 }
 
 #nav-droite {
@@ -21,6 +22,7 @@
 
 .elements {
   display: flex;
+  transition: 1s linear;
 }
 
 .element {
