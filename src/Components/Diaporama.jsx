@@ -13,6 +13,8 @@ window.onload = () => {
 
     // Calcul de la largeur du diapo
     slideWidth = diapo.getBoundingClientRect().width
+
+    timer = setInterval(slideNext, 4000)
 }
 
 function slideNext() {
