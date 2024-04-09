@@ -1,46 +1,27 @@
-.diapo {
-  position: relative;
-  overflow: hidden;
-}
-
-#nav-droite, #nav-gauche {
+.carousel .overlay {
+  width: 80%;
   position: absolute;
   top: 50%;
+  left: 10%;
   transform: translateY(-50%);
+  padding: 0.4rem 1.5rem;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  font-size: 3em;
+}
+.carousel .thumbs {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+.carousel .thumb {
+  margin: 0 5px;
   cursor: pointer;
 }
 
-#nav-droite {
-  right: 20px;
-}
-
-#nav-gauche {
-  left: 20px;
-}
-
-.elements {
-  display: flex;
-  transition: 1s linear;
-}
-
-.element {
-  position: relative;
-  flex: 1 0 100%;
-}
-.element > img {
-  width: 100%;
-}
-
-.caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
+.carousel, .overlay_title {
+  margin: 0.8rem 0 1rem 0;
 }
 
 /*# sourceMappingURL=Diaporama.css.map */

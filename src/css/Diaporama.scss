@@ -1,44 +1,27 @@
-.diapo {
-  position: relative;
-  overflow: hidden;
-}
-
-#nav-droite, #nav-gauche {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 3em;
-  cursor: pointer;
-}
-
-#nav-droite {
-  right: 20px;
-}
-
-#nav-gauche {
-  left: 20px;
-}
-
-.elements {
-  display: flex;
-  transition: 1s linear;
-}
-
-.element {
-  position: relative;
-  flex: 1 0 100%;
-  > img {
-    width: 100%;
+.carousel {
+  .overlay {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background-color: rgba(black, 0.6);
+    color: white;
+  }
+  .thumbs {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+  .thumb {
+    margin: 0 5px;
+    cursor: pointer;
   }
 }
 
-.caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 30px;
-  background-color: rgba(white, 0.4);
+.carousel, .overlay_title {
+  margin: 0.8rem 0 1rem 0;
 }
