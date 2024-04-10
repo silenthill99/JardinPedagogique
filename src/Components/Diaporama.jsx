@@ -8,16 +8,17 @@ const Diaporama = () => {
         {
             id: 1,
             image: "3 - 419044626_1376080719895300_3984056632727648427_n.jpg",
-            titre: "Image du slider 1",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, necessitatibus!"
         },
         {
             id: 2,
             image: "4 - 419324800_1376080636561975_3928395571157246398_n.jpg",
-            titre: "Image du slider 2",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, necessitatibus!"
+        },
+        {
+            id: 3,
+            image: "3 - 419044626_1376080719895300_3984056632727648427_n.jpg",
         }
     ]
+
     return (
         <div>
             <h3 style={{
