@@ -4,6 +4,7 @@ import {NavLink, Route, Routes} from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { SiInternetexplorer } from "react-icons/si";
 import Portfolio from "./pages/Portfolio.jsx";
+import Présentation from "./pages/Présentation.jsx";
 
 function App() {
     return (
@@ -17,12 +18,14 @@ function App() {
                 <nav>
                     <NavLink to="">Accueil</NavLink>
                     <NavLink to="portfolio">Portfolio</NavLink>
+                    <NavLink to="presentation">Nous présenter</NavLink>
                 </nav>
             </header>
             <main>
                 <Routes>
                     <Route path="" element={<Home/>}/>
                     <Route path="portfolio" element={<Portfolio/>}/>
+                    <Route path="presentation" element={<Présentation/>}/>
                 </Routes>
             </main>
             <footer>
