@@ -16,6 +16,12 @@ const Diaporama = () => {
             image: "4 - 419324800_1376080636561975_3928395571157246398_n.jpg",
             titre: "Image du slider 2",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, necessitatibus!"
+        },
+        {
+            id: 3,
+            image: "7 - IMG_20240328_155410.jpg",
+            titre: "Cabanon",
+            text: "Cabanon ou se trouvent les parcelles",
         }
     ]
     return (
