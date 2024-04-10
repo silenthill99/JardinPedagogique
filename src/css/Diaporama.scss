@@ -1,15 +1,4 @@
 .carousel {
-  .overlay {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    padding: 0.4rem 1.5rem;
-    text-align: left;
-    background-color: rgba(black, 0.6);
-    color: white;
-  }
   .thumbs {
     display: flex;
     justify-content: center;
@@ -21,7 +10,6 @@
     cursor: pointer;
   }
 }
-
 .carousel, .overlay_title {
   margin: 0.8rem 0 1rem 0;
 }

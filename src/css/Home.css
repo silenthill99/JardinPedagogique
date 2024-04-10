@@ -1,15 +1,3 @@
-.grid {
-  display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
-  gap: 15px;
-  margin: 0 15px;
-}
-
-.test {
-  border-radius: 5px;
-  border: 1px solid black;
-}
-
 .contexte {
   margin: 5%;
   display: grid;

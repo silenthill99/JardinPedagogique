@@ -16,26 +16,28 @@ const Diaporama = () => {
             image: "4 - 419324800_1376080636561975_3928395571157246398_n.jpg",
             titre: "Image du slider 2",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, necessitatibus!"
-        },
-        {
-            id: 3,
-            image: "7 - IMG_20240328_155410.jpg",
-            titre: "Cabanon",
-            text: "Cabanon ou se trouvent les parcelles",
         }
     ]
     return (
-        <Carousel autoPlay infiniteLoop interval={6000} thumbWidth={120} showIndicators={false}>
-            {datas.map((slide) => (
-                <div key={slide.id}>
-                    <img src={slide.image} alt=""/>
-                    <div className="overlay">
-                        <h2 className="overlay_title">{slide.titre}</h2>
-                        <p className="overlay_text">{slide.text}</p>
+        <div>
+            <h3 style={{
+                textAlign: "center"
+            }}>Quelques images du conseil du 23 mars</h3>
+            <Carousel
+                autoPlay
+                infiniteLoop
+                interval={6000}
+                thumbWidth={120}
+                showIndicators={false}
+                showStatus={false}
+            >
+                {datas.map((slide) => (
+                    <div key={slide.id}>
+                        <img src={slide.image} alt=""/>
                     </div>
-                </div>
-            ))}
-        </Carousel>
+                ))}
+            </Carousel>
+        </div>
     );
 };
 

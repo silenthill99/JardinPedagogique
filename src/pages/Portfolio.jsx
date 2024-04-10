@@ -15,7 +15,7 @@ const Portfolio = () => {
                 {Conference.map((image) => (
                     <a key={image.id} href={image.link} target={"_blank"}>
                         <img src={image.link} alt={image.alt}/>
-                        <div>
+                        <div className="photo-hover">
                             Voir la photo
                         </div>
                     </a>
@@ -24,11 +24,11 @@ const Portfolio = () => {
             <h2 style={{
                 textAlign:"center"
             }}>Lieu</h2>
-            <div className="portfolio">
+            <div className="portfolio-parcelle">
                 {Lieu.map((image) => (
                     <a key={image.id} href={image.link} target={"_blank"}>
                         <img src={image.link} alt={image.alt}/>
-                        <div>Voir la photo</div>
+                        <div className="photo-hover">Voir la photo</div>
                     </a>
                 ))}
             </div>

@@ -6,8 +6,11 @@ const Home = () => {
     document.title = "Accueil | Jardin pédagogique"
     return (
         <>
-            <h1>Page d'accueil</h1>
+            <h1 style={{
+                textAlign:"center"
+            }}>Page d'accueil</h1>
             <h2 style={{
+                marginLeft:"2.5%",
                 textDecoration:"underline"
             }}>Contexte</h2>
             <div className="contexte">
