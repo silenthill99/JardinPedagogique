@@ -19,7 +19,7 @@ const Home = () => {
                         textAlign: "justify"
                     }}>Le samedi 23 Mars 2024, les stagiaires de l'école de la 2ème chance de Cosne-Cours sur loire ont
                         été
-                        invités pour participer à un projet communal lié à l'environment. Parmi les différents projets
+                        invités pour participer à un projet communal lié à l'environnement. Parmi les différents projets
                         qui
                         ont été proposés, celui de faire un jardin partagé a été retenu.
                     </p>
