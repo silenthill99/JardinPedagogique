@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { SiInternetexplorer } from "react-icons/si";
 import Portfolio from "./pages/Portfolio.jsx";
 import Présentation from "./pages/Présentation.jsx";
+import Videos from "./pages/Videos.jsx";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <NavLink to="">Accueil</NavLink>
                     <NavLink to="portfolio">Portfolio</NavLink>
                     <NavLink to="presentation">Nous présenter</NavLink>
+                    <NavLink to={"videos"}>Quelques vidéos</NavLink>
                 </nav>
             </header>
             <main>
@@ -26,6 +28,7 @@ function App() {
                     <Route path="" element={<Home/>}/>
                     <Route path="portfolio" element={<Portfolio/>}/>
                     <Route path="presentation" element={<Présentation/>}/>
+                    <Route path={"videos"} element={<Videos/>}/>
                 </Routes>
             </main>
             <footer>
