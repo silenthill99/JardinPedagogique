@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
     "npm": "^10.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,8 +20,8 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",

@@ -1,5 +1,5 @@
-import React from 'react';
-import YoutubeVideos from "../Components/YoutubeVideos.jsx";
+/* eslint-disable react/no-unescaped-entities */
+import YoutubeVideos from "../Components/YoutubeVideos";
 import "../css/Videos.css"
 
 const Videos = () => {
