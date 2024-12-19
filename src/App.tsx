@@ -1,10 +1,10 @@
 import './css/App.css'
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Home";
 import {NavLink, Route, Routes} from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { SiInternetexplorer } from "react-icons/si";
-import Portfolio from "./pages/Portfolio.jsx";
-import Présentation from "./pages/Présentation.jsx";
+import Portfolio from "./pages/Portfolio";
+import Présentation from "./pages/Présentation";
 
 function App() {
     return (

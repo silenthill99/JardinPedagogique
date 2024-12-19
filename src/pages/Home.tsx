@@ -1,6 +1,6 @@
-import React from 'react';
+/* eslint-disable */
 import "../css/Home.css"
-import Diaporama from "../Components/Diaporama.jsx";
+import Diaporama from "../Components/Diaporama";
 
 const Home = () => {
     document.title = "Accueil | Jardin pédagogique"
