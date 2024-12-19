@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Présentation = () => {
     document.title = "Nous présenter | jardin pédagogique"
