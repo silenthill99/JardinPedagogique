@@ -1,23 +1,15 @@
 /* eslint-disable */
-import "../css/Home.css"
 import Diaporama from "../Components/Diaporama";
 
 const Home = () => {
     document.title = "Accueil | Jardin pédagogique"
     return (
-        <>
-            <h1 style={{
-                textAlign:"center"
-            }}>Page d'accueil</h1>
-            <h2 style={{
-                marginLeft:"2.5%",
-                textDecoration:"underline"
-            }}>Contexte</h2>
-            <div className="contexte">
+        <div className={"container mx-auto"}>
+            <h1 className={"text-center"}>Page d'accueil</h1>
+            <h2 className={"underline"}>Contexte</h2>
+            <div className="mt-5 grid grid-cols-2 gap-4">
                 <div>
-                    <p style={{
-                        textAlign: "justify"
-                    }}>Le samedi 23 Mars 2024, les stagiaires de l'école de la 2ème chance de Cosne-Cours sur loire ont
+                    <p className={"text-justify"}>Le samedi 23 Mars 2024, les stagiaires de l'école de la 2ème chance de Cosne-Cours sur loire ont
                         été
                         invités pour participer à un projet communal lié à l'environnement. Parmi les différents projets
                         qui
@@ -39,7 +31,7 @@ const Home = () => {
                 </div>
                 <Diaporama/>
             </div>
-        </>
+        </div>
     );
 };
 

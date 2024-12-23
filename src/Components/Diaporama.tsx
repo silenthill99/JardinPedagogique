@@ -1,6 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import {Carousel} from "react-responsive-carousel";
-import "../css/Diaporama.css"
 
 const Diaporama = () => {
     const datas = [
@@ -20,9 +19,7 @@ const Diaporama = () => {
 
     return (
         <div>
-            <h3 style={{
-                textAlign: "center"
-            }}>Quelques images du conseil du 23 mars</h3>
+            <h3 className={"text-center"}>Quelques images du conseil du 23 mars</h3>
             <Carousel
                 autoPlay
                 infiniteLoop

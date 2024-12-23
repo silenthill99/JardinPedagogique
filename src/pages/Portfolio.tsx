@@ -1,33 +1,25 @@
-import "../css/Portfolio.css"
-
 const Portfolio = () => {
     document.title = "Portfolio | jardin pédagogique"
     return (
-        <div>
-            <h1 style={{
-                textAlign:"center"
-            }}>Portfolio</h1>
-            <h2 style={{
-                textAlign:"center"
-            }}>Conférence au tribunal</h2>
-            <div className="portfolio">
+        <div className={"container mx-auto"}>
+            <h1 className={"text-center"}>Portfolio</h1>
+            <h2 className={"text-center"}>Conférence au tribunal</h2>
+            <div className="grid grid-cols-4 grid-rows-2 gap-4 mx-[10%] mb-24 rounded-xl overflow-hidden">
                 {Conference.map((image) => (
-                    <a key={image.id} href={image.link} target={"_blank"}>
-                        <img src={image.link} alt={image.alt}/>
-                        <div className="photo-hover">
+                    <a key={image.id} href={image.link} target={"_blank"} className={"relative duration-300 group"}>
+                        <img src={image.link} alt={image.alt} className="w-full h-full object-cover"/>
+                        <div className="absolute top-0 left-0 bottom-0 right-0 bg-black/70 hidden justify-center items-center text-white text-xl group-hover:flex">
                             Voir la photo
                         </div>
                     </a>
                 ))}
             </div>
-            <h2 style={{
-                textAlign:"center"
-            }}>Lieu</h2>
-            <div className="portfolio-parcelle">
+            <h2 className={"text-center"}>Lieu</h2>
+            <div className="grid grid-cols-4 gap-4 mx-[10%] mb-[10%] rounded-xl overflow-hidden">
                 {Lieu.map((image) => (
-                    <a key={image.id} href={image.link} target={"_blank"}>
-                        <img src={image.link} alt={image.alt}/>
-                        <div className="photo-hover">Voir la photo</div>
+                    <a key={image.id} href={image.link} target={"_blank"} className={"group relative"}>
+                        <img src={image.link} alt={image.alt} className={"w-full h-full object-cover"}/>
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 text-white hidden justify-center items-center text-xl group-hover:flex">Voir la photo</div>
                     </a>
                 ))}
             </div>
@@ -68,10 +60,12 @@ const Conference = [
     }
 ]
 
-const Lieu = [{
-    link: "7 - IMG_20240328_155410.jpg",
-    alt: "Cabanon",
-    id: 7
-}]
+const Lieu = [
+    {
+        link: "7 - IMG_20240328_155410.jpg",
+        alt: "Cabanon",
+        id: 7
+    }
+]
 
 export default Portfolio;

@@ -2,15 +2,16 @@ import React from 'react';
 
 type Props = {
     id: string;
+    className?: string;
 }
 
 const YoutubeVideos = (props: Props) => {
     return (
-        <div>
-            <iframe width="921" height="518" src={"https://www.youtube.com/embed/" + props.id}
+        <div className={props.className}>
+            <iframe src={"https://www.youtube.com/embed/" + props.id}
                     title="DÉBUTER UN POTAGER (Conseils, Fondamentaux, Matériel)"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                    web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    web-share" referrerPolicy="strict-origin-when-cross-origin" className={"w-full h-96"} allowFullScreen></iframe>
         </div>
     );
 };
